@@ -1,0 +1,13 @@
+{
+  "name": "allampapir-adatbazis",
+  "version": "1.0.0",
+  "description": "Automatizált állampapír adatbázis frissítő",
+  "main": "scraper.js",
+  "scripts": {
+    "scrape": "node scraper.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "cheerio": "^1.0.0-rc.12"
+  }
+}
