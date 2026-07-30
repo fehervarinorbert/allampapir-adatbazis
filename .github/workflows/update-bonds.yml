@@ -1,0 +1,39 @@
+name: Állampapír Adatok Frissítése
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'
+  workflow_dispatch:
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Kód letöltése
+        uses: actions/checkout@v4
+
+      - name: Node.js beállítása
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Függőségek telepítése
+        run: npm install
+
+      - name: Scraper futtatása
+        run: npm run scrape
+
+      - name: Változások commitolása
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          if [[ -n $(git status --porcelain) ]]; then
+            git add bonds.json
+            git commit -m "🤖 Automatikus adatfrissítés: Állampapír kamatok"
+            git push
+          else
+            echo "Nincs változás a bonds.json fájlban."
+          fi
