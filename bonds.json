@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-30",
+  "lastUpdated": "2026-08-03",
   "series": [
     {
       "id": "fixmap_2029_q1",
@@ -13,7 +13,7 @@
       "fixedRate": 5.5,
       "paymentFrequency": "quarterly",
       "autoCompounding": false,
-      "earlyRedemptionFee": 1.0,
+      "earlyRedemptionFee": 1,
       "isCurrentlyPurchasable": true,
       "currency": "HUF",
       "description": "3 éves futamidő, negyedévente fix 5,50% évesített kamatfizetés. Kiszámítható, fix hozam."
@@ -31,7 +31,7 @@
       "baseRate": 4.4,
       "paymentFrequency": "annual",
       "autoCompounding": false,
-      "earlyRedemptionFee": 1.0,
+      "earlyRedemptionFee": 1,
       "isCurrentlyPurchasable": true,
       "currency": "HUF",
       "description": "10 éves futamidő, inflációkövető kamatozás (előző évi átlagos infláció + 0,1% prémium). Éves kamatfizetés."
@@ -49,7 +49,7 @@
       "baseRate": 5.26,
       "paymentFrequency": "quarterly",
       "autoCompounding": false,
-      "earlyRedemptionFee": 1.0,
+      "earlyRedemptionFee": 1,
       "isCurrentlyPurchasable": true,
       "currency": "HUF",
       "description": "Változó kamatozású, 3 havi DKJ aukciós átlaghozamokhoz kötött kamatozás prémiummal. Negyedéves kamatfizetés."
@@ -64,11 +64,31 @@
       "maturityDate": "2031-07-17",
       "maturityMonths": 60,
       "interestSteps": [
-        { "yearFrom": 1, "yearTo": 1, "rate": 5.00 },
-        { "yearFrom": 2, "yearTo": 2, "rate": 5.25 },
-        { "yearFrom": 3, "yearTo": 3, "rate": 5.50 },
-        { "yearFrom": 4, "yearTo": 4, "rate": 5.75 },
-        { "yearFrom": 5, "yearTo": 5, "rate": 6.00 }
+        {
+          "yearFrom": 1,
+          "yearTo": 1,
+          "rate": 5
+        },
+        {
+          "yearFrom": 2,
+          "yearTo": 2,
+          "rate": 5.25
+        },
+        {
+          "yearFrom": 3,
+          "yearTo": 3,
+          "rate": 5.5
+        },
+        {
+          "yearFrom": 4,
+          "yearTo": 4,
+          "rate": 5.75
+        },
+        {
+          "yearFrom": 5,
+          "yearTo": 5,
+          "rate": 6
+        }
       ],
       "paymentFrequency": "annual",
       "autoCompounding": true,
@@ -87,10 +107,10 @@
       "issueDate": "2026-07-17",
       "maturityDate": "2027-07-17",
       "maturityMonths": 12,
-      "discountPrice": 95.0,
+      "discountPrice": 95,
       "paymentFrequency": "at_maturity",
       "autoCompounding": false,
-      "earlyRedemptionFee": 1.0,
+      "earlyRedemptionFee": 1,
       "isCurrentlyPurchasable": true,
       "currency": "HUF",
       "description": "Rövid távú Diszkont Kincstárjegy. Nincs közbenső kamatfizetés, lejáratkor 100%-os névértéken váltják vissza. Hozam kb. 5,26%."
@@ -104,11 +124,11 @@
       "issueDate": "2026-07-17",
       "maturityDate": "2029-07-17",
       "maturityMonths": 36,
-      "marketPremium": 0.0,
+      "marketPremium": 0,
       "baseRate": 2.49,
       "paymentFrequency": "quarterly",
       "autoCompounding": false,
-      "earlyRedemptionFee": 1.0,
+      "earlyRedemptionFee": 1,
       "isCurrentlyPurchasable": true,
       "currency": "EUR",
       "description": "Euróban vásárolható állampapír. Kamatbázis: 3 havi EURIBOR, negyedéves kifizetéssel. Aktuális kamat ~2,49%."
@@ -122,11 +142,11 @@
       "issueDate": "2026-02-01",
       "maturityDate": "2045-02-01",
       "maturityMonths": 228,
-      "inflationPremium": 3.0,
+      "inflationPremium": 3,
       "baseRate": 4.4,
       "paymentFrequency": "annual",
       "autoCompounding": true,
-      "earlyRedemptionFee": 0.0,
+      "earlyRedemptionFee": 0,
       "isCurrentlyPurchasable": true,
       "currency": "HUF",
       "description": "19 éves gyermek-megtakarítási állampapír. Előző évi infláció + 3,0% prémium, automatikusan újratőkésítve.",
@@ -142,11 +162,15 @@
       "maturityDate": "2027-07-01",
       "maturityMonths": 12,
       "interestSteps": [
-        { "yearFrom": 1, "yearTo": 1, "rate": 4.50 }
+        {
+          "yearFrom": 1,
+          "yearTo": 1,
+          "rate": 4.5
+        }
       ],
       "paymentFrequency": "at_maturity",
       "autoCompounding": false,
-      "earlyRedemptionFee": 1.0,
+      "earlyRedemptionFee": 1,
       "isCurrentlyPurchasable": true,
       "currency": "HUF",
       "description": "1 éves Kincstári Takarékjegy. Csak a Postán vásárolható. Nyomdai úton előállított, kamat 4,50%."
@@ -161,12 +185,20 @@
       "maturityDate": "2028-07-01",
       "maturityMonths": 24,
       "interestSteps": [
-        { "yearFrom": 1, "yearTo": 1, "rate": 5.00 },
-        { "yearFrom": 2, "yearTo": 2, "rate": 5.00 }
+        {
+          "yearFrom": 1,
+          "yearTo": 1,
+          "rate": 5
+        },
+        {
+          "yearFrom": 2,
+          "yearTo": 2,
+          "rate": 5
+        }
       ],
       "paymentFrequency": "at_maturity",
       "autoCompounding": false,
-      "earlyRedemptionFee": 1.0,
+      "earlyRedemptionFee": 1,
       "isCurrentlyPurchasable": true,
       "currency": "HUF",
       "description": "2 éves Kincstári Takarékjegy. Csak a Postán vásárolható. Nyomdai úton előállított, lépcsős kamatozással (5,00%)."
