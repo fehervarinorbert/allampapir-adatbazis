@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-21",
+  "lastUpdated": "2026-09-28",
   "series": [
     {
       "id": "fixmap_2029_q1",
@@ -46,7 +46,7 @@
       "maturityDate": "2032-07-17",
       "maturityMonths": 72,
       "marketPremium": 0.61,
-      "baseRate": 5.26,
+      "baseRate": 4.859999999999999,
       "paymentFrequency": "quarterly",
       "autoCompounding": false,
       "earlyRedemptionFee": 1,
